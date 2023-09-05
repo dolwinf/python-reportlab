@@ -22,12 +22,17 @@ def create_pdf(data, output_pdf):
     stylesheet['BodyText'].spaceBefore = 2
 
     for section in data:
-        if "heading" in section:
-            story.append(Paragraph(section["heading"], stylesheet["Title"]))
-        if "paragraph" in section:
+        if "section" in section:
             story.append(
-                Paragraph(section["paragraph"], stylesheet["BodyText"]))
-        story.append(Spacer(1, 25))  # Space between each set of data
+                Paragraph(section["section"]["heading"], stylesheet["Title"]))
+            for subsection in section["section"]["content"]:
+                if "subsection" in subsection:
+                    story.append(
+                        Paragraph(subsection["subsection"]["heading"], stylesheet["BodyText"]))
+                    story.append(
+                        Paragraph(subsection["subsection"]["paragraph"], stylesheet["BodyText"]))
+                story.append(Spacer(1, 25))
+        story.append(Spacer(1, 25))
 
     doc.build(story)
 

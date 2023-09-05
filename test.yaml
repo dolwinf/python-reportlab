@@ -1,5 +1,19 @@
-- heading: "Section 1"
-  paragraph: "This is the first paragraph under section 11."
+- section:
+    heading: "Main Section 1"
+    content: 
+      - subsection:
+          heading: "Subsection 1.1"
+          paragraph: "This is the first paragraph of subsection 1.1."
+      - subsection:
+          heading: "Subsection 1.2"
+          paragraph: "This is the first paragraph of subsection 1.2."
 
-- heading: "Section 2"
-  paragraph: "This is the first paragraph under section 22."
+- section:
+    heading: "Main Section 2"
+    content: 
+      - subsection:
+          heading: "Subsection 2.1"
+          paragraph: "This is the first paragraph of subsection 2.1."
+      - subsection:
+          heading: "Subsection 2.2"
+          paragraph: "This is the first paragraph of subsection 2.2."
