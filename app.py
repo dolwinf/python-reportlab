@@ -49,3 +49,26 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# Addition styling options:
+# stylesheet['Title'].fontName = 'Helvetica'
+# stylesheet['Title'].fontSize = 14
+# stylesheet['Title'].leading = 18
+# stylesheet['Title'].textColor = colors.blue
+# stylesheet['Title'].backColor = colors.yellow
+# stylesheet['Title'].borderColor = colors.red
+# stylesheet['Title'].borderWidth = 1
+# stylesheet['Title'].borderPadding = 5
+# stylesheet['Title'].alignment = 1  # Center alignment
+
+# Pre-defined styles:
+# Normal: Basic style generally used for body text.
+# BodyText: Also intended for body text with some customization options.
+# Title: Intended for title text, usually larger and potentially bold compared to body text.
+# Heading1, Heading2, ..., Heading6: These styles are for different levels of headings, with Heading1 being the highest level (usually used for main section titles) and Heading6 being the lowest level (used for subsections at several levels deep).
+# Italic: A style where the text is italicized.
+# Bold: A style where the text is bolded.
+# Bullet: A style intended for bulleted lists.
+# Definition: A style intended for definition lists.
+# Code: A style intended for code snippets, often using a monospaced font.
