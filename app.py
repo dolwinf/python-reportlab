@@ -1,7 +1,7 @@
 import yaml
 from reportlab.lib.pagesizes import letter
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
-from reportlab.lib import styles
+from reportlab.lib import styles, colors
 
 
 def parse_yaml(yaml_file):
@@ -19,6 +19,8 @@ def create_pdf(data, output_pdf):
     stylesheet['Title'].alignment = 0
     stylesheet['Title'].fontSize = 12
     stylesheet['Title'].spaceAfter = 2
+    stylesheet['Title'].textColor = colors.blue
+
     stylesheet['BodyText'].spaceBefore = 2
 
     for section in data:
