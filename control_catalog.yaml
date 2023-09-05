@@ -1,0 +1,59 @@
+# catalog:
+#   metadata:
+#     title: "Security Control Catalog"
+#     version: "1.1"
+#     published: "2023-08-01"
+#     last-modified: "2023-08-01"
+#     oscal-version: "1.0.0"
+#   groups:
+#     - id: "ac"
+#       title: "Access Control"
+#       controls:
+#         - id: "ac-01"
+#           title: "Access Control Policy and Procedures"
+#           priority: "P1"
+#           statements: 
+#             description: "This control requires the organization to develop, document, and disseminate an access control policy that addresses purpose, scope, roles, responsibilities, and management commitment, as well as procedures to facilitate the implementation of the access control policy and associated access controls."
+#             guidance: "Supplemental guidance here..."
+#           properties: 
+#             - name: "References"
+#               values: 
+#                 - "ISO/IEC 27001:2013, Clause 9.1"
+#                 - "NIST SP 800-53, Revision 5"
+
+catalog:
+  metadata:
+    title: "Security Control Catalog"
+    version: "1.1"
+    published: "2023-08-01"
+    last-modified: "2023-08-01"
+    oscal-version: "1.0.0"
+  groups:
+    - id: "ac"
+      title: "Access Control"
+      controls:
+        - id: "ac-01"
+          title: "Access Control Policy and Procedures"
+          priority: "P1"
+          statements: 
+            description: "This control requires the organization to develop, document, and disseminate an access control policy that addresses purpose, scope, roles, responsibilities, and management commitment, as well as procedures to facilitate the implementation of the access control policy and associated access controls."
+            guidance: "Supplemental guidance here..."
+          properties: 
+            - name: "References"
+              values: 
+                - "ISO/IEC 27001:2013, Clause 9.1"
+                - "NIST SP 800-53, Revision 5"
+    - id: "ia"
+      title: "Identification and Authentication"
+      controls:
+        - id: "ia-01"
+          title: "Identification and Authentication Policy and Procedures"
+          priority: "P1"
+          statements: 
+            description: "This control requires the organization to establish and maintain a policy and procedures for identification and authentication to protect the organization's information systems."
+            guidance: "More guidance on implementing this control can be found here..."
+          properties: 
+            - name: "References"
+              values: 
+                - "ISO/IEC 27001:2013, Clause 9.3"
+                - "NIST SP 800-53, Revision 5, IA-1"

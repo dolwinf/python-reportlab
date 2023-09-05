@@ -53,7 +53,7 @@ if __name__ == "__main__":
     main()
 
 
-# Addition styling options:
+# Additional styling options:
 # stylesheet['Title'].fontName = 'Helvetica'
 # stylesheet['Title'].fontSize = 14
 # stylesheet['Title'].leading = 18
@@ -74,3 +74,19 @@ if __name__ == "__main__":
 # Bullet: A style intended for bulleted lists.
 # Definition: A style intended for definition lists.
 # Code: A style intended for code snippets, often using a monospaced font.
+
+# Additional colors:
+# colors.black
+# colors.white
+# colors.red
+# colors.green
+# colors.blue
+# colors.yellow
+# colors.cyan
+# colors.magenta
+# colors.gray
+# colors.lightgrey
+# colors.darkgrey
+
+# HEX color code example:
+# my_color = colors.HexColor("#00FF00")
