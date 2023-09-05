@@ -21,6 +21,8 @@ def create_pdf(data, output_pdf):
     stylesheet['Title'].spaceAfter = 2
     stylesheet['Title'].textColor = colors.blue
 
+    stylesheet['Heading3'].textColor = colors.purple
+
     stylesheet['BodyText'].spaceBefore = 2
 
     for section in data:
@@ -30,7 +32,7 @@ def create_pdf(data, output_pdf):
             for subsection in section["section"]["content"]:
                 if "subsection" in subsection:
                     story.append(
-                        Paragraph(subsection["subsection"]["heading"], stylesheet["BodyText"]))
+                        Paragraph(subsection["subsection"]["heading"], stylesheet["Heading3"]))
                     story.append(
                         Paragraph(subsection["subsection"]["paragraph"], stylesheet["BodyText"]))
                 story.append(Spacer(1, 25))
